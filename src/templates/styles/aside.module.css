@@ -2,17 +2,25 @@
  box-sizing: border-box;
 }
 
-
 .aside{
  grid-area: as;
 }
 
-.aside__item a{
+.asideItem {
  padding: 5px;
+ text-decoration: none;
+}
+
+.asideItem a{
  text-decoration: none;
  color: #000;
 }
 
-.aside__item a:hover{
+.asideItem:hover{
+ border-radius: 5px;
  background-color: #fff;
+}
+
+.asideItemActive a{
+ color: #033A92;
 }

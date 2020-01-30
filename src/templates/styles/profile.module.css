@@ -4,7 +4,7 @@
  border-radius: 5px;
 }
 
-.content__container{
+.contentContainer{
  padding: 10px;
 }
 
@@ -12,7 +12,7 @@
  grid-area: c;
 }
 
-.content__img-container{
+.contentImgContainer{
  height: 200px;
  overflow: hidden;
  background-image: url("https://lh3.googleusercontent.com/fPiRaKpAE2cPgS-FLWjs836saZVWCrjV7otoNxIZaVJHngH_3n37zztF7L2zu42wfc76afUS=w1080-h608-p-no-v0");

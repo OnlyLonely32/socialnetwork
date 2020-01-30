@@ -1,19 +1,19 @@
 import React from 'react';
-import './styles/aside.css'
+import c from './styles/aside.module.css'
 
 const Aside = () => {
  return (        
-<aside className="aside">
-  <div className="aside__item">
+<aside className={c.aside}>
+  <div className={`${c.asideItem} ${c.asideItemActive}`}>
     <a href="#">profile</a>
   </div>
-  <div className="aside__item">
+  <div className={c.asideItem}>
     <a href="#">friends</a>
   </div>
-  <div className="aside__item">
+  <div className={c.asideItem}>
     <a href="#">messages</a>
   </div>
-  <div className="aside__item">
+  <div className={c.asideItem}>
     <a href="#">music</a>
   </div>
 </aside>
