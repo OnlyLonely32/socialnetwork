@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import Header from './templates/Header.jsx';
-import Aside from './templates/Aside.jsx';
-import Profile from './templates/Profile';
+import Header from './templates/header/Header';
+import Aside from './templates/asiede/Aside';
+import Profile from './templates/profile/Profile';
 
 
 const App = () => {

@@ -1,5 +1,7 @@
 import React from 'react';
 import c from './styles/profile.module.css'
+import MyPosts from './myPosts/MyPosts';
+
 
 const Profile = () => {
   return ( 
@@ -9,11 +11,7 @@ const Profile = () => {
     <section className={c.contentContainer}>
       <div className="avatar">avatar</div>
       <div className="description">about me</div>
-      <div className="post">
-        <div className="postItem">post 1</div>
-        <div className="postItem">post 2</div>
-        <div className="postItem">post 3</div>
-      </div>
+      <MyPosts />
     </section>
   </main>
 );
