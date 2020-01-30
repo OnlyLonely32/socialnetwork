@@ -1,0 +1,25 @@
+*, *:hover{
+ box-sizing: border-box;
+}
+
+.app__wrapper{
+ width: 100vw;
+ height: 100vh;
+ background-color: #f0f0f0;
+}
+
+.app__container{
+ max-width: 960px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-areas: "h h" "as c";
+ grid-template-rows: 60px 1fr;
+ grid-template-columns: 2fr 10fr;
+ grid-gap: 10px;
+}
+
+.header{
+ grid-area: h;
+}
+
+
