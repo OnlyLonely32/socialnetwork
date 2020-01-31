@@ -8,10 +8,6 @@
  padding: 10px;
 }
 
-.content{
- grid-area: c;
-}
-
 .contentImgContainer{
  height: 200px;
  overflow: hidden;

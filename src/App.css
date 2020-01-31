@@ -18,8 +18,8 @@
  grid-gap: 10px;
 }
 
-.header{
- grid-area: h;
+.app__wrapper__content{
+ grid-area: c;
 }
 
 

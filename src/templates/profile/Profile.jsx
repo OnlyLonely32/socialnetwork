@@ -5,9 +5,9 @@ import MyPosts from './myPosts/MyPosts';
 
 const Profile = () => {
   return ( 
-  <main className={c.content}>
+  <main>
     <div className={c.contentImgContainer}>
-</div>
+    </div>
     <section className={c.contentContainer}>
       <div className="avatar">avatar</div>
       <div className="description">about me</div>
