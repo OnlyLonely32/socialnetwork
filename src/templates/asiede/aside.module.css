@@ -11,16 +11,15 @@
  text-decoration: none;
 }
 
+
 .asideItem a{
  text-decoration: none;
  color: #000;
 }
-
+.asideItem .activeLink{
+ color: #033A92;
+}
 .asideItem:hover{
  border-radius: 5px;
  background-color: #fff;
-}
-
-.asideItemActive a{
- color: #033A92;
 }
