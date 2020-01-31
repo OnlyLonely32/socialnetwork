@@ -3,14 +3,3 @@
  border: 1px solid #ccc;
  border-radius: 5px;
 }
-
-.contentContainer{
- padding: 10px;
-}
-
-.contentImgContainer{
- height: 200px;
- overflow: hidden;
- background-image: url("https://lh3.googleusercontent.com/fPiRaKpAE2cPgS-FLWjs836saZVWCrjV7otoNxIZaVJHngH_3n37zztF7L2zu42wfc76afUS=w1080-h608-p-no-v0");
- background-position: center center;
-}

@@ -2,4 +2,5 @@
  width: 100%; /* Ширина поля в процентах */
  height: 50px;
  resize: none;
+ border-radius: 5px;
 }

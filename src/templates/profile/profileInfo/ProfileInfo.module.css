@@ -1,0 +1,22 @@
+.contentImgContainer{
+ height: 200px;
+ overflow: hidden;
+ background-image: url("https://lh3.googleusercontent.com/fPiRaKpAE2cPgS-FLWjs836saZVWCrjV7otoNxIZaVJHngH_3n37zztF7L2zu42wfc76afUS=w1080-h608-p-no-v0");
+ background-position: left center;
+}
+
+.contentContainer{
+ padding: 10px;
+ background-color: #fff;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ margin: 10px 0;
+ display: grid;
+ grid-template-columns: 200px 1fr;
+ grid-gap: 10px;
+}
+
+.avatar{
+ height: 200px;
+ background: #ccc;
+}
