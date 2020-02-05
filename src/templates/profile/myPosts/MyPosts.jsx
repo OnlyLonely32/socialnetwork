@@ -2,13 +2,13 @@ import React from 'react';
 import c from './myPosts.module.css'
 import Post from './Post/Post';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+  let pItems = props.posts.map( p => <Post message={p.message} like={p.like}/>);
   return ( 
     <div className={c.myPosts}>
       <textarea className={c.postText}></textarea>
       <button>Add post</button>
-      <Post message="message is null" like="10" />
-      <Post message="refact this post" like="12"  />
+      { pItems }
     </div>
 );
 }

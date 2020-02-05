@@ -1,0 +1,11 @@
+.message{
+ padding: 5px;
+ margin-bottom: 10px;
+ background-color: rgb(102, 226, 189);
+ border-radius: 5px;
+ border-bottom-left-radius: 0;
+}
+
+.message:last-child{
+ margin-bottom: 0;
+}
