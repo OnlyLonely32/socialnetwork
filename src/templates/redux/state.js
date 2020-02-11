@@ -34,7 +34,7 @@ let state = {
    {message: "По алгоритму и сделаю их", inOut: "in"},
    {message: "Попробуем", inOut: "out"}
   ],
-  tempMessage = (message) => {
+  tempMessage(message){
    state.messagePage.messageText = message;
    RenderDOM(state, addPost, temp);
    }
