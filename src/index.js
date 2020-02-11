@@ -1,30 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { RenderDOM } from './render';
 import * as serviceWorker from './serviceWorker';
+import state, { addPost, temp } from './templates/redux/state'
 
-let postsItems = [
- {message: "How are you&", like: 10},
- {message: "Maybe г like this", like: 15},
- {message: "Wow", like: 8},
-]
-
-let dialogsItems = [
- {id: 1, name: "Каролина"},
- {id: 2, name: "Ольгерд"},
- {id: 3, name: "Евгений"},
- {id: 4, name: "Гелатьт"} 
-];
-
-let messageItems = [
- {message: "Привет"},
- {message: "Привет!"},
- {message: "Как ты?"},
- {message: "Хорошо"}
-];
-
-ReactDOM.render(<App posts={postsItems} dialogs={dialogsItems} messages={messageItems}/>, document.getElementById('root'));
+RenderDOM(state, addPost, temp);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -11,7 +11,6 @@
  text-decoration: none;
 }
 
-
 .asideItem a{
  text-decoration: none;
  color: #000;
@@ -22,4 +21,10 @@
 .asideItem:hover{
  border-radius: 5px;
  background-color: #fff;
+}
+.friends{
+ margin-top: 50px;
+}
+.friendsTitle{
+ color: #000;
 }

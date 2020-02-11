@@ -3,9 +3,38 @@
  grid-gap: 10px;
  grid-template-columns: 3fr 6fr;
 }
+
 .dialogItems, .messageItems{
  padding: 10px;
  background-color: #fff;
  border: 1px solid #ccc;
  border-radius: 5px;
+}
+
+.mesageItems{
+ position: relative;
+}
+
+.sendMessage{
+ width: 100%;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ 
+}
+
+.sendMessageText{
+ width: 80%;
+ height: 50px;
+ resize: none;
+}
+
+.sendMessageBtn{
+ width: 20%;
+ color: #fff;
+ background-color: #033A92;
+ border: none;
+ border-radius: 5px;
+ padding: 10px 30px;
+ float: right;
 }

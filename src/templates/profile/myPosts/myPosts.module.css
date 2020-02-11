@@ -1,6 +1,27 @@
+.newPost{
+ padding: 10px;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}
+
 .postText{
- width: 100%; /* Ширина поля в процентах */
+ width: 80%; /* Ширина поля в процентах */
  height: 50px;
  resize: none;
  border-radius: 5px;
+}
+
+.sendPost{
+ width: 20%;
+ color: #fff;
+ background-color: #033A92;
+ border: none;
+ border-radius: 5px;
+ padding: 10px 30px;
+ float: right;
+}
+
+.newPost{
+ background: #fff;
 }

@@ -1,0 +1,19 @@
+.friendsItem{
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ margin-bottom: 10px;
+}
+.friendsImg{
+ width: 35px;
+ height: 35px;
+ border-radius: 50%;
+ overflow: hidden;
+ border: 1px solid #FC3A1B;
+}
+.friendsImgContent{
+ width: 100%;
+}
+.friendsTitle{
+ margin-left: 10px;
+}

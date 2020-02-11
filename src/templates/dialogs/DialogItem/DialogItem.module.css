@@ -1,0 +1,38 @@
+.dialogItem{
+ margin-bottom: 10px;
+}
+
+.dialogItem .activeItem .dialogTitle{
+ color: #033A92;
+}
+
+.dialogItem:last-child{
+ margin-bottom: 0;
+}
+
+.dialogNavLink{
+ text-decoration: none;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+}
+
+.dialogImg{
+ width: 36px;
+ height: 36px;
+ border: 1px solid #FC3A1B;
+ border-radius: 50%;
+ overflow: hidden;
+}
+
+ .dialogImgContent{
+  width: 100%;
+ }
+
+.dialogItem .dialogTitle
+{
+ text-decoration: none;
+ color: #000;
+ margin-left: 10px;
+}
+
