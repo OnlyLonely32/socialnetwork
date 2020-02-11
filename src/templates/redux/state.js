@@ -25,6 +25,7 @@ let state = {
    {id: 3, name: "Евгений", img: "https://sun9-9.userapi.com/c204520/v204520295/1ec95/E5fIuT8ivv8.jpg?ava=1"},
    {id: 4, name: "Гелатьт", img: "https://sun2.dataix-by-minsk.userapi.com/c857132/v857132943/1b76e/LlysqbH3dxQ.jpg?ava=1"} 
   ],
+  messageText: "",
   messageItems: [
    {message: "Если ты ответы не знаешь", inOut: "out"},
    {message: "Там ее хуева туча, даже если почитаешь не запомнишь", inOut: "in"},
@@ -32,7 +33,11 @@ let state = {
    {message: "Вечером повторю как делаются все эти задания и все", inOut: "in"},
    {message: "По алгоритму и сделаю их", inOut: "in"},
    {message: "Попробуем", inOut: "out"}
-  ]
+  ],
+  tempMessage = (message) => {
+   state.messagePage.messageText = message;
+   RenderDOM(state, addPost, temp);
+   }
  }
 }
 

@@ -21,7 +21,7 @@ const App = (props) => {
           <div className="app__wrapper__content">
             <Route path='/profile' render={ () => <Profile posts={props.state.profilePage} temp={props.temp} addPost={props.addPost}/>}/>
             <Route path="/friends" component={Friends}/>
-            <Route path='/dialogs' render={ () => <Dialogs dialogs={props.state.messagePage.dialogsItems} messages={props.state.messagePage.messageItems}/>}/>
+            <Route path='/dialogs' render={ () => <Dialogs dialogs={props.state.messagePage} messages={props.state.messagePage.messageItems}/>}/>
             <Route path="/news" component={News}/>
             <Route path='/music' component={Music}/>
           </div>
