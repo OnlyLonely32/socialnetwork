@@ -1,18 +1,19 @@
 import React from 'react';
 import c from './myPosts.module.css'
 import Post from './Post/Post';
+import {newPostTextCreator, addPostCreator} from '../../redux/profileReducer';
 
 const MyPosts = (props) => {
   let pItems = props.posts.postItems.map( p => <Post message={p.message} like={p.like}/>);
   let text = React.createRef();
 
   let show = () => {
-    props.addPost();
+    props.dispatch(addPostCreator());
   }
   
   let change = () => {
     let postText = text.current.value;
-    props.temp(postText);
+    props.dispatch(newPostTextCreator(postText));
   }
 
   return ( 

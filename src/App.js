@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import Header from './templates/header/Header';
 import Aside from './templates/asiede/Aside';
 import Profile from './templates/profile/Profile';
@@ -12,6 +11,7 @@ import { Route, BrowserRouter } from 'react-router-dom';
 
 
 const App = (props) => {
+ 
   return (
     <BrowserRouter>
       <div className="app__wrapper">
@@ -19,9 +19,9 @@ const App = (props) => {
           <Header />
           <Aside friends={props.state.aside.friendsItems}/>
           <div className="app__wrapper__content">
-            <Route path='/profile' render={ () => <Profile posts={props.state.profilePage} temp={props.temp} addPost={props.addPost}/>}/>
+            <Route path='/profile' render={ () => <Profile posts={props.state.profilePage} dispatch={props.dispatch}/>}/>
             <Route path="/friends" component={Friends}/>
-            <Route path='/dialogs' render={ () => <Dialogs dialogs={props.state.messagePage} messages={props.state.messagePage.messageItems}/>}/>
+            <Route path='/dialogs' render={ () => <Dialogs dialogs={props.state.messagePage} dispatch={props.dispatch}/>}/>
             <Route path="/news" component={News}/>
             <Route path='/music' component={Music}/>
           </div>

@@ -2,15 +2,16 @@ import React from 'react';
 import c from './dialogs.module.css'
 import Message from './Message/Message';
 import DialogItem from './DialogItem/DialogItem';
+import {newMessageTextCreator, addMessageCreator} from '../redux/dialogsReducer';
 
 const Dialogs = (props) => {
   let dItem = props.dialogs.dialogsItems.map( d => <DialogItem id={d.id} name={d.name} img={d.img}/>);
-  let mItem = props.messages.map( m => <Message message={m.message} inOut={m.inOut}/>);
+  let mItem = props.dialogs.messageItems.map( m => <Message message={m.message} inOut={m.inOut}/>);
 
   let text = React.createRef();
-  let show = () => alert(text.current.value)
+  let show = () => props.dispatch(addMessageCreator());
   let change = () => {
-    props.dialogs.tempMessage(text.current.value);
+    props.dispatch(newMessageTextCreator(text.current.value));
   }
   return (        
   <div className={c.dialogs}>
